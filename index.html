@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+	<title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+<div class="containers">
+<div class="wrapper">
+    <div class="title">
+      Job Application Form
+    </div>
+    <form class="form" action="form.php" method="POST" enctype="multiple/form-data">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" id="firstname" name="firstname" required/>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" id="lastName" name="lastname" required/>
+       </div>
+       <div class="inputfield">
+        <label>Email Address</label>
+        <input type="email" class="input" id="email" name="email" required/>
+       </div>
+       <div class="inputfield">
+         <label>Contact Number</label>
+         <input type="text" class="input" id="phone" name="phone" required/>
+       </div>
+       <div class="inputfield">
+          <label>Gender</label>
+            <label  class="radio-inline">
+              <input type="radio" name="gender" value="m" id="male" required/>Male</label >
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="f" id="female" required/>Female</label>
+       </div>   
+       <div class="inputfield">
+          <label>Collage Name</label>
+          <input type="text" class="input" id="collage" name="collage" required/>
+       </div>  
+       <div class="inputfield">
+          <label>Country</label>
+          <input type="country" class="input" id="country" name="country" required/>
+       </div>
+       <div class="inputfield">
+         <label>City</label>
+         <input type="city" class="input" id="city" name="city" required/>
+       </div>
+       <div class="inputfield">
+         <label>Year of Graduaction</label>
+         <input type="text" class="input" id="year" name="year" required/>
+       </div> 
+       <div class="inputfieldl">
+         <label>Skills</label>
+         <div class="s">
+           <select  name="skills[]" class="selectpicker" data-style="text" multiple data-max-options="5" required>
+             <optgroup label="Development">
+              <option name="skills[]" value="php">PHP</option>
+              <option name="skills[]" value="django">Django</option>
+              <option name="skills[]" value="html">HTML</option>
+              <option name="skills[]" value="react">REACT</option>
+              <option name="skills[]"  value="javaScript">JavaScript</option>
+              <option name="skills[]" value="android">Android</option>
+              <option name="skills[]" value="ml">MachineLearning</option>
+             </optgroup>
+             <optgroup label="Programming">
+              <option name="skills[]" value="java">Java</option>
+              <option name="skills[]"  value="c++" >C++</option>
+              <option name="skills[]" value="python">Python</option>
+              <option name="skills[]" value="c">C</option>
+             </optgroup>
+           </select>
+         </div>
+        </div>            
+        <div class="inputfield">
+          <label>Tell us what have you done</label>
+            <textarea class="textarea" id="work" name="work" required></textarea>
+        </div> 
+        <div class="inputfield">
+          <label>Upload your Resume or CV</label>
+          <input type="file" name="file" value="fileupload" id="fileupload" required>
+        </div> 
+        <div for=""class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" name="v" required/>
+            <span class="checkmark"></span>
+            
+          </label>
+          <p>Agreed to terms and conditions</p>
+        </div> 
+        <div class="inputfield">
+          <input type="submit" value="apply" name="create" class="btn">
+        </div>
+    </form>
+</div>	
+</div>	
+</body>
+
+</html>
